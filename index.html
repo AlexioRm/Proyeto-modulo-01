@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Producto Sin Imágenes</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="#producto">Producto</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#compra">Compra</a></li>
+      </ul>
+    </nav>
+    <h1 id="titulo-principal">Producto Sin Imagenes</h1>
+  </header>
+
+  <main role="main">
+    <section id="producto" aria-labelledby="titulo-producto">
+      <h2 id="titulo-producto">Descripción del Producto</h2>
+      <p>Este producto está diseñado para ofrecerte soluciones prácticas y efectivas, mejorando tu experiencia diaria con tecnología de última generación.</p>
+    </section>
+
+    <section id="beneficios" aria-labelledby="titulo-beneficios">
+      <h2 id="titulo-beneficios">Beneficios Principales</h2>
+      <div class="beneficios">
+        <div class="beneficio" tabindex="0">
+          <h3>Fácil de usar</h3>
+          <p>Una interfaz intuitiva que facilita tu aprendizaje y uso diario sin complicaciones.</p>
+        </div>
+        <div class="beneficio" tabindex="0">
+          <h3>Alta compatibilidad</h3>
+          <p>Funciona perfectamente en la mayoría de dispositivos y sistemas operativos actuales.</p>
+        </div>
+        <div class="beneficio" tabindex="0">
+          <h3>Soporte dedicado</h3>
+          <p>Accede a nuestro equipo de soporte 24/7 para resolver cualquier duda o problema.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="compra" aria-labelledby="titulo-compra">
+      <h2 id="titulo-compra">Compra Ahora</h2>
+      <form>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="producto-seleccionado">Producto a comprar:</label>
+        <select id="producto-seleccionado" name="producto-seleccionado" required>
+          <option value="">Seleccione...</option>
+          <option value="producto1">Producto 1</option>
+          <option value="producto2">Producto 2</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
